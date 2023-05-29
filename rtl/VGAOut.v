@@ -33,7 +33,7 @@ begin
 end
 
 //reg inDisplayArea;
-always @(posedge Clk) begin
+always @(posedge Clk) begin :displayarea
 	reg hbl, vbl;
 
 	vbl <= (CounterY > 479);
